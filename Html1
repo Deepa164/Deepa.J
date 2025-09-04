@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepalakshmi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Deepalakshmi</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-up">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <!-- Girl Profile Placeholder -->
+      <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png" alt="Profile Picture" class="profile-pic">
+      <p>Hello! I’m <strong>Deepalakshmi</strong>, a web developer who loves creating responsive and animated websites using HTML, CSS, and JavaScript. I enjoy designing clean UI and interactive user experiences.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="fade-up">
+    <h2>Skills</h2>
+    <div class="skill" data-level="90">
+      <span>HTML & CSS</span>
+      <div class="bar"><i></i></div>
+    </div>
+    <div class="skill" data-level="80">
+      <span>JavaScript</span>
+      <div class="bar"><i></i></div>
+    </div>
+    <div class="skill" data-level="70">
+      <span>Responsive Design</span>
+      <div class="bar"><i></i></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built with HTML, CSS, and JavaScript animations.</p>
+      </div>
+      <div class="project-card">
+        <h3>Todo App</h3>
+        <p>A simple Todo app with local storage and interactive UI.</p>
+      </div>
+      <div class="project-card">
+        <h3>Landing Page</h3>
+        <p>A responsive landing page with smooth animations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-up">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:deepalakshmij781@gmail.com">deepalakshmij781@gmail.com</a></p>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Deepalakshmi | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
